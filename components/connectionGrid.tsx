@@ -70,10 +70,16 @@ export default function ConnectionGrid({ members, getWeight, setWeight }: Connec
               </th>
               {members.map((member, index) => (
                 <th key={`col-${member.id}`}>
+                 <div className={styles.rotationWrapperOuter}>
+                    <div className={styles.rotationWrapperInner}>
+                      <div className={styles.elementToRotate}> 
                   {member.name}
+                      </div>
+                    </div>
+                  </div>
                 </th>
               ))}
-            </tr>
+            </tr>    
           </thead>
           <tbody>
             {members.map((rowMember, rowIndex) => (

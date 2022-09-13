@@ -1,22 +1,20 @@
-.connectionGrid {
+.connectionGrid {    
 
-     th:not(:first-child) {
+/*   th:not(:first-child) {
         max-width: 100px;
         overflow-wrap: break-word;
         word-break: break-word;
         text-align: left !important;
         vertical-align: top;
         hyphens: auto;
-        writing-mode: vertical-rl;
-        max-height: 140px;
-        transform: scale(-1, -1);
-     }
+        max-height: 140px; 
+     } 
 
     th:first-child {
         max-width: 100px;
         vertical-align: center;
     }
-    
+*/
     tr > td:first-child {
         min-width: 100px;
         max-width: 140px;
@@ -25,4 +23,21 @@
         text-align: left;
         hyphens: auto;
     }
+}
+.rotationWrapperOuter {
+    display: table;
+}
+
+.rotationWrapperInner {
+    padding: 50% 0;
+    height: 0;
+}
+
+.elementToRotate {
+    display: block;
+    transform-origin: top left;
+    transform: rotate(-90deg) translate(-100%);
+    margin-top: -50%;
+    white-space: nowrap;
+
 }
